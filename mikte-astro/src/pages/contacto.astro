@@ -1,0 +1,24 @@
+---
+// src/pages/contacto.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contacto - Mikte Cervecería">
+  <section>
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o comentarios? Envíanos un mensaje.</p>
+
+    <form class="formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</Layout>
